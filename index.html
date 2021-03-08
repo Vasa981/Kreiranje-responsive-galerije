@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>Responsive galerija</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+        #wrapper {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1024px;
+        }
+        .predmet_galerije {
+            border-radius: 5px;
+            border: solid 1px rgb(202, 202, 202);
+            overflow: hidden;
+        }  
+        #galerija {
+            display: grid;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .slika1 {
+            align-items: center;
+            display: flex;
+            background-color: #6596c7;
+            justify-content: center;
+        }
+
+        .slika1 img {
+            width: 100%;
+        }
+
+        .naslov {
+            display: flex;
+            justify-content: center;
+            font-size: 0.9em;
+            margin-top: auto;
+            background-color: white;
+            color: rgb(110, 110, 110);
+            padding: 4px;
+        }
+
+        @media (max-width: 414px) {
+            #galerija {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+            #galerija {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Gallery Heading</h1>
+        <div id="galerija">
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+
+            <div class="predmet_galerije">
+                <div class="slika1">
+                    <img src="placeholder-image.png" alt="Placeholder">
+                </div>
+                <div class="naslov">Image Title</div>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Bibendum enim facilisis gravida neque. Proin fermentum leo vel orci. Cras semper auctor
+            neque vitae tempus quam pellentesque. Tristique sollicitudin nibh sit amet commodo nulla facilisi. Elit
+            scelerisque mauris pellentesque pulvinar pellentesque. Augue mauris augue neque gravida in fermentum et
+            sollicitudin ac. Molestie a iaculis at erat pellentesque adipiscing commodo. Aliquam etiam erat velit
+            scelerisque in dictum non. Vitae purus faucibus ornare suspendisse. Sem et tortor consequat id. Pellentesque
+            pulvinar pellentesque habitant morbi tristique. Proin libero nunc consequat interdum. Velit euismod in
+            pellentesque massa placerat duis.
+        </p>
+    </div>
+</body>
+</html>
